@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni 72';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bodoni 72'), url('../fonts/Bodoni\ 72.ttc') format('ttc');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Regular';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+body{
+    margin: 0;
+    background-color: #fff;
+}
+
+/* fonts */
+
+h1{
+    font-family: 'Bodoni 72';
+    font-weight: normal;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Pretendard-Regular';
+    font-weight: normal;
+}
+
+/* lines */
+
+.line-bl {
+    height: 0.25px;
+    background-color: #000;
+    width: 100%;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+}
+
+.line-wh {
+    height: 0.25px;
+    background-color: #fff;
+    width: 100%;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+}
+
+/* nav */
+
+.header{
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    width: 100%;
+    z-index: 10;
+    color: #000;
+    background-color: #fff;
+}
+
+.header-txt{
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.header .header-txt .logo{
+
+}
+.header .header-txt .logo h1{
+    font-size: 30px;
+}
+.header .header-txt .nav{
+    position: relative;
+}
+.header .header-txt .nav .gnb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-txt .nav .gnb >li{
+    padding: 15px;
+}
+.header .header-txt .nav .gnb >li > a{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header .header-txt .nav .gnb >li > a:hover{
+    color: #696969;
+}
+
+.header .header-txt .nav .gnb .icons{
+    position: absolute;
+    right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-txt .nav .gnb .icons li{
+    padding: 10px;
+} 
+
+/* body */
+
+.wrap{
+    width: 100%;
+    text-align: center;
+}
+
+.head{
+    margin-top: 105px;
+    height: 90vh;
+}
+.head img{
+    height: 100%;
+    opacity: 0;
+    animation: fade-in-animation 1s ease-in forwards;
+}
+
+.wrap #seoul{
+    background-color: #d8d8d8;
+}
+
+@keyframes fade-in-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.tit{
+    margin: 200px;
+}
+.tit h1{
+    font-weight: 400;
+    font-size: 70px;
+}
+.tit h2{
+    font-family: 'Bodoni 72';
+    font-size: 25px;
+}
+.ex{}
+.ex img{
+    width: 1000px;
+}
+
+
+/* footer */
+
+footer{
+    position: relative;
+    /* bottom: 0; */
+    
+    height: 200px;
+    width: 100%;
+    background-color: #000;
+    color: #696969;
+}
+
+.wrapper{
+    width: 1200px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h2{
+    font-family: 'bodoni 72';
+    font-size: 25px;
+    color: #9a9a9a;
+}
+.wrapper p{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+}
+.wrapper .icons{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+.wrapper .icons li{
+    padding: 8px;
+}
+.wrapper .icons li a{}
+.wrapper .icons li a img{
+    width: 20px;
+}
+
+/* move-to-top */
+
+a.top {
+    position: fixed;
+    right: 2rem;
+    bottom: 50px;
+    display: none;
+    z-index: 10;
+}
+
+a.top img{
+    width: 70px;
+}
