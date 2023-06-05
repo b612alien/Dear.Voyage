@@ -19,9 +19,9 @@ function changeSVGPath() {
   var svgPath = '';
 
   if (footerPosition <= window.innerHeight) {
-    svgPath = '../img/top-wh.svg'; // 푸터 위치 이하에서는 변경된 이미지 파일 경로
+    svgPath = 'img/top-wh.svg'; // 푸터 위치 이하에서는 변경된 이미지 파일 경로
   } else {
-    svgPath = '../img/top.svg'; // 푸터 위치 이상에서는 기존 이미지 파일 경로
+    svgPath = 'img/top.svg'; // 푸터 위치 이상에서는 기존 이미지 파일 경로
   }
 
   svgElement.setAttribute('src', svgPath);
