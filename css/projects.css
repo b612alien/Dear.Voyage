@@ -101,9 +101,14 @@ p{
     width: 100%;
     z-index: 10;
     color: #000;
-    background-color: #fff;
-    /* background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px); */
+    /* background-color: #fff; */
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.5s ease;
+}
+
+.scroll-top {
+    background-color: rgba(255, 255, 255, 1); /* 스크롤 맨 위에 있을 때의 배경 투명도 설정 */
 }
 
 .header-txt{

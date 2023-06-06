@@ -10,6 +10,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
     <title>Brand</title>
+
+    <!-- script -->
+    <script>
+        window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop === 0) {
+            header.classList.add('scroll-top');
+        } else {
+            header.classList.remove('scroll-top');
+        }
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -43,7 +56,7 @@
         <div class="exp">
             <h2>About Us</h2>
             <p>우리는 여행이라는 짧지만 오래도록 기억될 순간을 위해 먼 발걸음을 옮깁니다.<br>
-                누군가는 그 순간을 버팀목 삼아 평생을 살아가기도 합니다. 하지만 때로는 추억을 되짚기 위해 사진 그 이상의 것을 원하곤 합니다.<br>
+                누군가는 그 순간을 버팀목 삼아 평생을 살아갑니다. 하지만 때로는 추억을 되짚기 위해 사진, 그 이상의 것을 원하죠.<br>
                 저희는 바로 그 사람들을 위해 시작되었습니다. 그리고 그 시간을 모든 감각으로 기억하고 싶어 하는 사람들을 위해 만들어냅니다.<br><br>
                 
                 당신의 소중한 추억을 보다 오래 간직해 줄 여행 메이트<br>
