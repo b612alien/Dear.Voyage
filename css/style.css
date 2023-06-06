@@ -7,9 +7,29 @@
 
 @font-face {
     font-family: 'Bodoni 72';
-    font-style: normal;
+    src: url('BodoniSvtyTwoITCTT-BookIta.woff2') format('woff2'),
+        url('BodoniSvtyTwoITCTT-BookIta.woff') format('woff');
     font-weight: normal;
-    src: local('Bodoni 72'), url('../fonts/Bodoni\ 72.ttc') format('ttc');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni 72';
+    src: url('BodoniSvtyTwoITCTT-Book.woff2') format('woff2'),
+        url('BodoniSvtyTwoITCTT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni 72';
+    src: url('BodoniSvtyTwoITCTT-Bold.woff2') format('woff2'),
+        url('BodoniSvtyTwoITCTT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -427,4 +447,9 @@ footer{
 .wrapper .icons li a{}
 .wrapper .icons li a img{
     width: 20px;
+}
+
+@media (max-width: 768px) {
+    /* 모바일에 최적화된 예외 CSS 코드*/
+    
 }
