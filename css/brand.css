@@ -257,6 +257,7 @@ footer{
     }
     footer{
         width: 100%;
+        background-color: #000;
     }
     
     footer .wrapper{
@@ -279,6 +280,7 @@ footer{
         position: fixed;
         top: 0;
         z-index: 10;
+        width: 100%;
     }
 
     .icons {
@@ -379,10 +381,12 @@ footer{
       }
       body, .wrap .exp{
         width: 100%;
-        word-break: keep-all;
       }
       .wrap .exp{
-        margin-left: 20px;
-        margin-right: 20px;
+    
+      }
+      .wrap{
+        width: 100%;
+        word-break: keep-all;
       }
 }

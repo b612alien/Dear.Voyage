@@ -522,12 +522,11 @@ footer{
     }
     footer{
         width: 100%;
+        position: relative;
         word-break: keep-all;
     }
     footer .wrapper{
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
     }
     footer .wrapper .icons{
         display: none;
@@ -546,6 +545,7 @@ footer{
         position: fixed;
         top: 0;
         z-index: 10;
+        width: 100%;
     }
 
     .icons {
