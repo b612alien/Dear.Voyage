@@ -278,12 +278,13 @@ a.top img{
         display: none;
     }
     footer{
-        width: 100%;
+        display: none;
+        /* width: 100%;
         position: relative;
-        background-color: #000;
+        background-color: #000; */
     }
     
-    footer .wrapper{
+    /* footer .wrapper{
         width: 100%;
     }
     footer .wrapper .icons{
@@ -291,7 +292,7 @@ a.top img{
         position: absolute;
         left: 0;
         bottom: 0;
-    }
+    } */
 
     .mobile-header{
         display: flex;
@@ -326,9 +327,10 @@ a.top img{
         display: flex;
         justify-content: center;
         align-items: center;
+        white-space: nowrap;
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 5vw;
     }
 
     #sidebar {

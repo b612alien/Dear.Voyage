@@ -256,11 +256,12 @@ footer{
         display: none;
     }
     footer{
-        width: 100%;
-        background-color: #000;
+        display: none;
+        /* width: 100%;
+        background-color: #000; */
     }
     
-    footer .wrapper{
+    /* footer .wrapper{
         width: 100%;
     }
     footer .wrapper .icons{
@@ -268,7 +269,7 @@ footer{
         position: absolute;
         left: 0;
         bottom: 0;
-    }
+    } */
 
     .mobile-header{
         display: flex;
@@ -303,9 +304,10 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        white-space: nowrap;
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 5vw;
     }
 
     #sidebar {
