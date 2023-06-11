@@ -25,6 +25,37 @@
     </script>
 </head>
 <body>
+    <!-- mobile header -->
+    <div id="sidebar"></div>
+    <div class="mobile-header">
+        <ul class="icons">
+            <li>
+                <nav>
+                    <div class="hamburger">
+                        <a><img src="img/menu.svg" alt="메뉴"></a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="brand.html">Brand</a></li>
+                        <li><a href="seoul.html">Seoul</a></li>
+                        <li><a href="tokyo.html">Tokyo</a></li>
+                        <li><a href="newyork.html">New York</a></li>
+                        <li><a href="paris.html">Paris</a></li>
+                        <li><a href="dubai.html">Dubai</a></li>
+                        <li><a href="bali.html">Bali</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#"><img src="img/search_bl.svg" alt="검색"></a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html"><h1>DEAR. VOYAGE</h1></a>
+        </div>
+        <ul class="icons">
+            <li><a href="#"><img src="img/user_bl.svg" alt="사용자"></a></li>
+            <li><a href="#"><img src="img/cart_bl.svg" alt="장바구니"></a></li>
+        </ul>
+    </div>
+
     <div class="header">
         <div class="header-txt">
             <div class="logo">
@@ -55,7 +86,7 @@
         <img src="img/whole.png" alt="Products">
         <div class="exp">
             <h2>About Us</h2>
-            <p>우리는 여행이라는 짧지만 오래도록 기억될 순간을 위해 먼 발걸음을 옮깁니다.<br>
+            <p>우리는 여행이라는 짧지만 오래도록 기억될 순간을 위해 먼 발걸음을 옮깁니다.
                 누군가는 그 순간을 버팀목 삼아 평생을 살아갑니다. 하지만 때로는 추억을 되짚기 위해 사진, 그 이상의 것을 원하죠.<br>
                 저희는 바로 그 사람들을 위해 시작되었습니다. 그리고 그 시간을 모든 감각으로 기억하고 싶어 하는 사람들을 위해 만들어냅니다.<br><br>
                 
@@ -82,5 +113,10 @@
             </ul>
         </div>
     </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+          document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

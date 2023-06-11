@@ -177,6 +177,10 @@ p{
     background-color: #fff;
     color: #000;
 }
+
+.mobile-icons{
+    display: none;
+}
   
 
 /* projects */
@@ -427,7 +431,219 @@ footer{
     width: 20px;
 }
 
+.mobile-projects{
+    display: none;
+}
+
+.mobile-projects h2{
+    font-family: 'Montserrat';
+    font-weight: medium;
+}
+
+.mobile-projects h3{
+    font-family: 'Montserrat';
+    font-weight: lighter;
+}
+
+.mobile-projects{
+    position: relative;
+    top: 30px;
+}
+.mobile-projects li{
+    
+}
+.mobile-projects li img{
+    width: 100%;
+}
+.mobile-projects .product-exp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 15vh;
+}
+.mobile-projects .buttons{
+    display: flex;
+}
+.mobile-projects .box-wh{
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-projects .box-bl{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.mobile-header{
+    display: none;
+}
+
 @media (max-width: 768px) {
     /* 모바일에 최적화된 예외 CSS 코드*/
+    .bg-video{
+        display: none;
+        height: 0;
+    }
+    .arrow-con{
+        display: none;
+        height: 0;
+    }
+    .header{
+        display: none;
+    }
+
+    .mobile-icons{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .projects{
+        display: none;
+    }
+    .mobile-projects {
+        display: block;
+        margin-top: 30px;
+    }
+    .for-footer{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        word-break: keep-all;
+    }
+    footer .wrapper{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer .wrapper .icons{
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .mobile-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        background-color: #fff;
+        color: #000;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%
+    }
+    .icons li{
+        /* margin-left: 50px; */
+        margin: 30px;
+    }
+    .icons img{
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .logo{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: left 0.3s, opacity 0.3s;
+      }
+      
+      #sidebar.open {
+        left: 0;
+        opacity: 1;
+      }
+
+      nav {
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px; */
+      }
+      
+      .hamburger {
+        cursor: pointer;
+      }
     
+      
+      .menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        left: 0;
+        height: 100%;
+        width: 300px;
+        background-color: #fff;
+        z-index: 10;
+        animation: slide-in 1s ease forwards;
+        
+      }
+      @keyframes slide-in {
+        0% {
+          transform: translateX(-200px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
+      
+      .menu li {
+        margin-bottom: 10px;
+      }
+      
+      .menu li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        
+      }
+      .menu li a:hover{
+        color:#696969;
+      }
+      
+      /* Show menu when hamburger is clicked */
+      .show {
+        display: block;
+      }
+      
+
 }

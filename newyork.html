@@ -14,6 +14,36 @@
     <title>PROJECT NEW YORK</title>
 </head>
 <body>
+    <!-- mobile header -->
+    <div id="sidebar"></div>
+    <div class="mobile-header">
+        <ul class="icons">
+            <li>
+                <nav>
+                    <div class="hamburger">
+                        <a><img src="img/menu.svg" alt="메뉴"></a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="brand.html">Brand</a></li>
+                        <li><a href="seoul.html">Seoul</a></li>
+                        <li><a href="tokyo.html">Tokyo</a></li>
+                        <li><a href="newyork.html">New York</a></li>
+                        <li><a href="paris.html">Paris</a></li>
+                        <li><a href="dubai.html">Dubai</a></li>
+                        <li><a href="bali.html">Bali</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#"><img src="img/search_bl.svg" alt="검색"></a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html"><h1>DEAR. VOYAGE</h1></a>
+        </div>
+        <ul class="icons">
+            <li><a href="#"><img src="img/user_bl.svg" alt="사용자"></a></li>
+            <li><a href="#"><img src="img/cart_bl.svg" alt="장바구니"></a></li>
+        </ul>
+    </div>
     <a href="#" class="top"><img src="img/top.svg" alt="top" id="top-svg"></a>
     <div class="header">
         <div class="header-txt">
@@ -66,5 +96,10 @@
             </ul>
         </div>
     </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+          document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

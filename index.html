@@ -15,7 +15,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
     <title>DEAR. VOYAGE</title>
-    
+    <script>
+        document.getElementById("menuButton").addEventListener("click", function() {
+            document.getElementById("sidebar").classList.toggle("open");
+        });
+    </script>
+      
 </head>
 <body>
     <div class="bg-video">
@@ -45,10 +50,48 @@
                         <li><a href="#"><img src="img/user_wh.svg" alt="사용자"></a></li>
                         <li><a href="#"><img src="img/cart_wh.svg" alt="장바구니"></a></li>
                     </ul>
+
+                    <ul class="mobile-icons">
+                        <li><a href="" id="menuButton"><img src="img/menu.svg" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="img/search_bl.svg" alt="검색"></a></li>
+                        <li><a href="#"><img src="img/user_bl.svg" alt="사용자"></a></li>
+                        <li><a href="#"><img src="img/cart_bl.svg" alt="장바구니"></a></li>
+                    </ul>
                 </ul>
             </div>
         </div>
         <div class="line-wh"></div>
+    </div>
+
+    <!-- mobile header -->
+    <div id="sidebar"></div>
+    <div class="mobile-header">
+        <ul class="icons">
+            <li>
+                <nav>
+                    <div class="hamburger">
+                        <a><img src="img/menu.svg" alt="메뉴"></a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="brand.html">Brand</a></li>
+                        <li><a href="seoul.html">Seoul</a></li>
+                        <li><a href="tokyo.html">Tokyo</a></li>
+                        <li><a href="newyork.html">New York</a></li>
+                        <li><a href="paris.html">Paris</a></li>
+                        <li><a href="dubai.html">Dubai</a></li>
+                        <li><a href="bali.html">Bali</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#"><img src="img/search_bl.svg" alt="검색"></a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html"><h1>DEAR. VOYAGE</h1></a>
+        </div>
+        <ul class="icons">
+            <li><a href="#"><img src="img/user_bl.svg" alt="사용자"></a></li>
+            <li><a href="#"><img src="img/cart_bl.svg" alt="장바구니"></a></li>
+        </ul>
     </div>
 
     <div class="wrap">
@@ -74,7 +117,7 @@
             </li>
             <li>
                 <div class="hideme vr-col">
-                    <div class="vr-col-ver">
+                    <div class="vr-col-ver hideme">
                         <img id="tokyo-img" src="img/tokyo_head.png" alt="Project Tokyo">
                         <div class="product-exp">
                             <div class="bundle">
@@ -150,6 +193,94 @@
                 </div>
             </li>
         </ul>
+<!-- mobile -->
+        <ul class="mobile-projects">
+            <li class="exclude">
+                <img src="img/seoul_head.png" alt="Project Seoul">
+                    <div class="product-exp">
+                        <div class="bundle">
+                            <h2>Project Seoul</h2>
+                            <h3>₩210,000</h3>
+                        </div>
+                        <ul class="buttons">
+                            <li class="box-wh"><a href="seoul.html">SEE MORE</a></li>
+                            <li class="box-bl"><a href="#">ADD CART</a></li>
+                        </ul>
+                    </div>
+            </li>
+            <li>
+                <div class="">
+                    <img src="img/tokyo_head.png" alt="Project Tokyo">
+                        <div class="product-exp">
+                            <div class="bundle">
+                                <h2>Project Tokyo</h2>
+                                <h3>₩210,000</h3>
+                            </div>
+                        <ul class="buttons">
+                            <li class="box-wh"><a href="tokyo.html">SEE MORE</a></li>
+                            <li class="box-bl"><a href="#">ADD CART</a></li>
+                        </ul>
+                </div>
+            </li>
+            <li>
+                <div class="">
+                    <img src="img/ny_head.png" alt="Project New York">
+                    <div class="product-exp">
+                        <div class="bundle">
+                            <h2>Project New York</h2>
+                            <h3>₩210,000</h3>
+                        </div>
+                        <ul class="buttons">
+                            <li class="box-wh"><a href="newyork.html">SEE MORE</a></li>
+                            <li class="box-bl"><a href="#">ADD CART</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="">
+                    <img src="img/paris_head.png" alt="Project Paris">
+                        <div class="product-exp">
+                            <div class="bundle">
+                                <h2>Project Paris</h2>
+                                <h3>₩210,000</h3>
+                            </div>
+                        <ul class="buttons">
+                            <li class="box-wh"><a href="paris.html">SEE MORE</a></li>
+                            <li class="box-bl"><a href="#">ADD CART</a></li>
+                        </ul>
+                </div>
+            </li>
+            <li>
+                <div class="">
+                    <img src="img/dubai_head.png" alt="Project Dubai">
+                    <div class="product-exp">
+                        <div class="bundle">
+                            <h2>Project Dubai</h2>
+                            <h3>₩210,000</h3>
+                        </div>
+                        <ul class="buttons">
+                            <li class="box-wh"><a href="dubai.html">SEE MORE</a></li>
+                            <li class="box-bl"><a href="#">ADD CART</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="">
+                    <img src="img/bali_head.png" alt="Project Bali">
+                        <div class="product-exp">
+                            <div class="bundle">
+                                <h2>Project Bali</h2>
+                                <h3>₩210,000</h3>
+                            </div>
+                        <ul class="buttons">
+                            <li class="box-wh"><a href="bali.html">SEE MORE</a></li>
+                            <li class="box-bl"><a href="#">ADD CART</a></li>
+                        </ul>
+                </div>
+            </li>
+        </ul>
         <script>
             document.querySelector('.arrow-con a').addEventListener('click', function (event) {
                 event.preventDefault(); // 기본 이벤트(해시(#)로 이동)를 막습니다.
@@ -179,5 +310,11 @@
             </ul>
         </div>
     </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+          document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+      
 </body>
 </html>
